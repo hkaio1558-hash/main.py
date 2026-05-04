@@ -82,4 +82,7 @@ if __name__ == "__main__":
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, responder))
     print("Bot Dizis TV rodando...")
+    
     app.run_polling()
+# deploy v2
+
